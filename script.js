@@ -2,9 +2,9 @@ function toFahrenheit(celsius) {
  // Write your code here
 
 	let fahrenheit = (celsius*9/5)+32
-	return round(fahrenheit)
+	return fahrenheit.tofixed(2)
 }
 
 // Do not change the code below
-const celsius = promp("Enter Celsius:");
+const celsius = prompt("Enter Celsius:");
 alert(toFahrenheit(Number(celsius)));
